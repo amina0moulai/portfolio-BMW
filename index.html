@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio BMW — Style & Effets</title>
-
 </head>
-
 
 <body>
     <header class="entete" role="banner">
@@ -20,8 +18,11 @@
             <nav class="main-nav" role="navigation" aria-label="Menu principal">
                 <ul>
                     <li><a href="#home">Accueil</a></li>
-                    <li><a href="#models">Modèles</a></li>
-                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#gammes">Gammes</a></li>
+                    <li><a href="#berline">Berline</a></li>
+                    <li><a href="#sportive">Sportive</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="credits.html">Crédits</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -34,35 +35,193 @@
             <h1>Entrez dans l'univers <span class="brand">BMW</span></h1>
             <p class="hero-subtitle"><span id="typed">Puissance</span></p>
             <div class="hero-ctas">
-                <a class="btn primary" href="#models">Voir les modèles</a>
-                <a class="btn ghost" href="#gallery">Voir la galerie</a>
+                <a class="btn primary" href="#berline">Commencer le scroll</a>
+                <a class="btn ghost" href="#sportive">Voir la M4</a>
             </div>
         </div>
     </section>
 
     <main>
-        <section id="models" class="models">
-            <h2>Choisissez votre série</h2>
-            <ul class="model-list">
-                <li>M1</li>
-                <li>M2</li>
-                <li>M3</li>
-                <li>M4</li>
-                <li>M5</li>
-                <li>M6</li>
-                <li>M7</li>
-            </ul>
+        <section id="gammes" class="story-section">
+            <h2>Les gammes BMW</h2>
+            <p>Le site commence ici. L’idée est de faire défiler une histoire, pas une simple liste.</p>
+            <div class="story-pills">
+                <span>Berline</span>
+                <span>Sportive</span>
+                <span>Compacte</span>
+                <span>SUV</span>
+                <span>Luxe</span>
+                <span>Électrique</span>
+            </div>
         </section>
 
-        <section id="gallery" class="gallery">
-            <h2>Galerie</h2>
-            <p>Entrez dans l'univers de BMW</p>
-            <div class="image-frame">
-                <img src="images/bmw_1er_plan.jpg" alt="bmw M4 GT3">
+        <section id="berline" class="story-section story-feature">
+            <div class="story-copy">
+                <p class="story-label">Première gamme</p>
+                <h2>Berline</h2>
+                <h3>Série 3 - 330i</h3>
+                <p>Cette section peut ressembler à une fiche produit BMW : une grande image centrale et des infos qui
+                    apparaissent autour pendant le scroll.</p>
             </div>
 
-            <div class="image-2">
-                <img src="images/bmw_1er_plan.jpg" alt="bmw M4 GT3">
+            <div class="story-visual product-highlight">
+                <div class="product-callout product-callout-top-left">
+                    <p class="callout-title">Moteur</p>
+                    <p>2.0 TwinPower Turbo</p>
+                </div>
+
+                <div class="product-callout product-callout-top-right">
+                    <p class="callout-title">Puissance</p>
+                    <p>245 ch</p>
+                </div>
+
+                <div class="product-callout product-callout-bottom-left">
+                    <p class="callout-title">0-100 km/h</p>
+                    <p>5,9 s</p>
+                </div>
+
+                <div class="product-callout product-callout-bottom-right">
+                    <p class="callout-title">Transmission</p>
+                    <p>Propulsion</p>
+                </div>
+
+                <figure>
+                    <img src="images/bmw_1er_plan.jpg" alt="BMW Série 3 330i sans fond">
+                    <figcaption>Image à remplacer par une Série 3 détourée</figcaption>
+                </figure>
+            </div>
+
+            <div class="story-details-grid">
+                <div>
+                    <h4>Motorisation</h4>
+                    <p>Essence</p>
+                </div>
+                <div>
+                    <h4>Finition</h4>
+                    <p>M Sport</p>
+                </div>
+                <div>
+                    <h4>Famille</h4>
+                    <p>Berline</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sportive" class="story-section sportive-immersive">
+            <div class="story-copy">
+                <p class="story-label">Deuxième gamme</p>
+                <h2>Sportive</h2>
+                <h3>M4 GT3 - modèle 3D principal</h3>
+                <p>La M4 devient la star de la section: grand format, sans case autour, avec une présence centrale et
+                    des repères directement posés sur la voiture.</p>
+            </div>
+
+            <div class="sportive-scroll-scene">
+                <div class="sportive-sticky-stage">
+                    <div class="sportive-3d-viewer-wrap">
+                        <div class="m4-stage-badge" data-stage-badge>Vue de départ</div>
+
+                        <div class="m4-overlay-callout m4-callout-top-left">
+                            <span class="callout-arrow"></span>
+                            <p class="callout-title">Moteur</p>
+                            <p data-m4-engine>3.0L 6-cyl biturbo</p>
+                        </div>
+
+                        <div class="m4-overlay-callout m4-callout-top-right">
+                            <span class="callout-arrow"></span>
+                            <p class="callout-title">Puissance</p>
+                            <p data-m4-power>550 ch</p>
+                        </div>
+
+                        <div class="m4-overlay-callout m4-callout-bottom-left">
+                            <span class="callout-arrow"></span>
+                            <p class="callout-title">0-100 km/h</p>
+                            <p data-m4-time>3,4 s</p>
+                        </div>
+
+                        <div class="m4-overlay-callout m4-callout-bottom-right">
+                            <span class="callout-arrow"></span>
+                            <p class="callout-title">Transmission</p>
+                            <p data-m4-drive>Propulsion</p>
+                        </div>
+
+                        <model-viewer id="m4-viewer" src="2022_bmw_m4_gt3.glb" alt="Modèle 3D BMW M4 GT3"
+                            camera-controls disable-zoom disable-pan disable-tap shadow-intensity="0.9" exposure="1.05"
+                            interaction-prompt="none" ar-status="not-presenting" loading="eager" reveal="auto"
+                            camera-orbit="42deg 72deg 150%" field-of-view="28deg">
+                        </model-viewer>
+                    </div>
+                </div>
+
+                <div class="sportive-panels">
+                    <article class="sportive-step is-active" data-stage-name="Vue de départ"
+                        data-orbit="42deg 72deg 150%" data-fov="28deg" data-engine="3.0L 6-cyl biturbo"
+                        data-power="550 ch" data-time="3,4 s" data-drive="Propulsion">
+                        <p class="story-label">Étape 1</p>
+                        <h4>Vue de départ</h4>
+                        <p>On part de cette rotation. La voiture est plus inclinée, plus dramatique, comme une machine
+                            en mouvement.</p>
+                    </article>
+
+                    <article class="sportive-step" data-stage-name="Face avant" data-orbit="0deg 82deg 104%"
+                        data-fov="18deg" data-engine="Calandre et flux d'air" data-power="550 ch" data-time="3,4 s"
+                        data-drive="Propulsion">
+                        <p class="story-label">Étape 2</p>
+                        <h4>Face avant</h4>
+                        <p>En scrollant, on se rapproche du nez de la voiture, comme si elle avançait vers nous. On zoom
+                            un peu pour qu’elle remplisse l’écran.</p>
+                    </article>
+
+                    <article class="sportive-step" data-stage-name="Profil et roue" data-orbit="-120deg 76deg 132%"
+                        data-fov="24deg" data-engine="Roues et appui aérodynamique" data-power="550 ch"
+                        data-time="3,4 s" data-drive="Propulsion">
+                        <p class="story-label">Étape 3</p>
+                        <h4>Profil et roue</h4>
+                        <p>Dernière facette: on tourne pour voir les roues et les lignes du profil, avec un zoom un peu
+                            plus large pour respirer.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="collection" class="story-section collection-section">
+            <div class="story-copy">
+                <p class="story-label">Collection</p>
+                <h2>Toutes les images BMW que tu as ajoutées</h2>
+                <p>Cette grille simple te permet de montrer toutes les images du dossier sans faire un gros système
+                    compliqué.</p>
+            </div>
+
+            <div class="collection-grid">
+                <article class="collection-card">
+                    <img src="images/m1.png" alt="BMW M1">
+                    <h3>M1</h3>
+                    <p>Compacte sportive</p>
+                </article>
+
+                <article class="collection-card">
+                    <img src="images/m2.png" alt="BMW M2">
+                    <h3>M2</h3>
+                    <p>Compacte muscle</p>
+                </article>
+
+                <article class="collection-card">
+                    <img src="images/M3_berline.png" alt="BMW M3 Berline">
+                    <h3>M3 Berline</h3>
+                    <p>Berline performance</p>
+                </article>
+
+                <article class="collection-card">
+                    <img src="images/m4-gt3.png" alt="BMW M4 GT3">
+                    <h3>M4 GT3</h3>
+                    <p>Version piste</p>
+                </article>
+
+                <article class="collection-card">
+                    <img src="images/m4-LCI.png" alt="BMW M4 LCI">
+                    <h3>M4 LCI</h3>
+                    <p>Version route</p>
+                </article>
             </div>
         </section>
 
@@ -72,8 +231,9 @@
         </section>
     </main>
 
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <script src="script.js"></script>
-
 </body>
 
 </html>
