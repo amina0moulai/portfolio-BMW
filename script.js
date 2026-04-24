@@ -196,4 +196,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
         render(currentIndex);
     });
+
+    const title = document.querySelector('.hero-title');
+
+    if (title) {
+        title.addEventListener('mousemove', (e) => {
+            const r = title.getBoundingClientRect();
+            const x = ((e.clientX - r.left) / r.width) * 100;
+            const y = ((e.clientY - r.top) / r.height) * 100;
+            title.style.setProperty('--mx', `${x}%`);
+            title.style.setProperty('--my', `${y}%`);
+        });
+
+        // Optionnel: quand la souris sort, retour au centre
+        title.addEventListener('mouseleave', () => {
+            title.style.setProperty('--mx', '50%');
+            title.style.setProperty('--my', '50%');
+        });
+    }
 });
