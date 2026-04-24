@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Typed subtitle (simple, beginner-friendly) ---
+    
     const typedEl = document.getElementById('typed');
     const words = ['Puissance', 'Élégance', 'Performance', 'Design'];
     let wordIndex = 0;
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (typedEl) type();
 
-    // --- Sticky header + small parallax effect for hero background ---
+    
     const header = document.querySelector('.entete');
     const hero = document.querySelector('.hero');
 
