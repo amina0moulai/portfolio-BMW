@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio BMW — Style & Effets</title>
+
+</head>
+
+
+<body>
+    <header class="entete" role="banner">
+        <div class="header-inner">
+            <a href="#home" class="logo" aria-label="Accueil BMW">
+                <img src="images/logo-m.png" alt="logo de BMW">
+            </a>
+
+            <nav class="main-nav" role="navigation" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#models">Modèles</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home" aria-label="Hero BMW">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+            <h1>Entrez dans l'univers <span class="brand">BMW</span></h1>
+            <p class="hero-subtitle"><span id="typed">Puissance</span></p>
+            <div class="hero-ctas">
+                <a class="btn primary" href="#models">Voir les modèles</a>
+                <a class="btn ghost" href="#gallery">Voir la galerie</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="models" class="models">
+            <h2>Choisissez votre série</h2>
+            <ul class="model-list">
+                <li>M1</li>
+                <li>M2</li>
+                <li>M3</li>
+                <li>M4</li>
+                <li>M5</li>
+                <li>M6</li>
+                <li>M7</li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Galerie</h2>
+            <p>Entrez dans l'univers de BMW</p>
+            <div class="image-frame">
+                <img src="images/bmw_1er_plan.jpg" alt="bmw M4 GT3">
+            </div>
+
+            <div class="image-2">
+                <img src="images/bmw_1er_plan.jpg" alt="bmw M4 GT3">
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Envie d'en savoir plus ? Tu peux m'écrire ici plus tard.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
