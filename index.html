@@ -24,6 +24,7 @@
                     <li><a href="#gammes">Gammes</a></li>
                     <li><a href="#berline">Berline</a></li>
                     <li><a href="#sportive">Sportive</a></li>
+                    <li><a href="#moteur">Moteur V8</a></li>
                     <li><a href="#collection">Collection</a></li>
                     <li><a href="credits.html">Crédits</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -151,10 +152,10 @@
                             <p data-m4-drive>Propulsion</p>
                         </div>
 
-                        <model-viewer id="m4-viewer" src="2022_bmw_m4_gt3.glb" alt="Modèle 3D BMW M4 GT3"
-                            camera-controls disable-zoom disable-pan disable-tap shadow-intensity="0.9" exposure="1.05"
-                            interaction-prompt="none" ar-status="not-presenting" loading="eager" reveal="auto"
-                            camera-orbit="42deg 72deg 150%" field-of-view="28deg">
+                        <model-viewer id="m4-viewer" src="2022_bmw_m4_gt3.glb" alt="Modèle 3D BMW M4 GT3" disable-zoom
+                            disable-pan disable-tap shadow-intensity="0.9" exposure="1.05" interaction-prompt="none"
+                            ar-status="not-presenting" loading="eager" reveal="auto" camera-orbit="42deg 72deg 150%"
+                            field-of-view="28deg">
                         </model-viewer>
                     </div>
                 </div>
@@ -185,6 +186,70 @@
                         <h4>Profil et roue</h4>
                         <p>Dernière facette: on tourne pour voir les roues et les lignes du profil, avec un zoom un peu
                             plus large pour respirer.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="moteur" class="story-section v8-section">
+            <div class="story-copy">
+                <p class="story-label">Troisième gamme</p>
+                <h2>Moteur V8 3D</h2>
+                <h3>Assemblage pièce par pièce</h3>
+                <p>Ce module met en scène ton fichier 3D avec un montage progressif. En scrollant dans les étapes, la
+                    timeline de l'animation avance pour montrer la construction du moteur.</p>
+            </div>
+
+            <div class="v8-layout">
+                <div class="v8-stage">
+                    <div class="v8-stage-badge" data-v8-stage>Initialisation</div>
+                    <p class="v8-stage-status" data-v8-status>Chargement du moteur V8...</p>
+
+                    <div class="v8-viewer-wrap">
+                        <model-viewer id="v8-transition-m4" src="2022_bmw_m4_gt3.glb" alt="Transition depuis BMW M4 GT3"
+                            disable-zoom disable-pan disable-tap interaction-prompt="none" shadow-intensity="0.9"
+                            exposure="1.02" loading="eager" reveal="auto" camera-orbit="-120deg 76deg 132%"
+                            field-of-view="24deg">
+                        </model-viewer>
+
+                        <model-viewer id="v8-viewer" src="v8_engine.glb" alt="Moteur V8 BMW en 3D" disable-zoom
+                            disable-pan disable-tap interaction-prompt="none" shadow-intensity="1" exposure="1.05"
+                            loading="eager" reveal="auto" autoplay>
+                        </model-viewer>
+                    </div>
+
+                    <div class="v8-controls">
+                        <button type="button" class="btn ghost" data-v8-play>Lancer le montage complet</button>
+                        <button type="button" class="btn ghost" data-v8-pause>Pause</button>
+                    </div>
+                </div>
+
+                <div class="v8-steps">
+                    <article class="v8-step is-active" data-v8-step data-stage-name="Bloc moteur" data-time="0">
+                        <p class="story-label">Étape 1</p>
+                        <h4>Bloc moteur</h4>
+                        <p>Point de départ: la base du V8 apparaît, avec la structure principale prête à recevoir les
+                            éléments internes.</p>
+                    </article>
+
+                    <article class="v8-step" data-v8-step data-stage-name="Vilebrequin" data-time="1.1">
+                        <p class="story-label">Étape 2</p>
+                        <h4>Vilebrequin</h4>
+                        <p>La cinématique centrale se met en place: le vilebrequin vient s'installer au cœur du bloc.
+                        </p>
+                    </article>
+
+                    <article class="v8-step" data-v8-step data-stage-name="Pistons" data-time="2.2">
+                        <p class="story-label">Étape 3</p>
+                        <h4>Pistons et bielles</h4>
+                        <p>Les pistons et bielles se verrouillent progressivement pour construire le cycle mécanique du
+                            moteur.</p>
+                    </article>
+
+                    <article class="v8-step" data-v8-step data-stage-name="Culasse" data-time="3.3">
+                        <p class="story-label">Étape 4</p>
+                        <h4>Culasse et couvre-culasse</h4>
+                        <p>La partie haute ferme l'ensemble et donne sa silhouette finale au moteur V8.</p>
                     </article>
                 </div>
             </div>
